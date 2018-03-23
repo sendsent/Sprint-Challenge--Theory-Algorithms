@@ -10,6 +10,8 @@ both `antelope` and `antelopes`.)
     antelope rocks out
     antelopes rock out
 
+** Answer -> antelopes? rocks? out
+
 * Regex that matches either of:
 
     goat
@@ -19,14 +21,17 @@ both `antelope` and `antelopes`.)
 
     boat
 
+** Answer -> g?m?oat
+
+
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
   is correct (e.g 33333-33-33 can match).
 
-  2000-10-12
-  1999-1-20
-  1999-01-20
-  812-2-10
+  2000-10-12 -> \d{4}-\d{2}-\d{2}
+  1999-1-20  -> \d{4}-\d{1}-\d{2}
+  1999-01-20 -> \d{4}-\d{2}-\d{2}
+  812-2-10   -> \d{3}-\d{1}-\d{2}
 
 ## State Machines
 
